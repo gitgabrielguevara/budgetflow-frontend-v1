@@ -51,36 +51,48 @@
 
 ## API Routes
 
-| Method | Path | Purpose |
-| ------ | ---- | ------- |
+### User Authentication
 
-| **User Authentication** | | |
-| POST | `/api/v1/users/register` | Register a new user |
-| POST | `/api/v1/users/login` | Log in a user |
-| GET | `/api/v1/users/profile` | Fetch user profile details |
-| PUT | `/api/v1/users/profile` | Update user profile details |
+| Method | Path                     | Purpose                     |
+| ------ | ------------------------ | --------------------------- |
+| POST   | `/api/v1/users/register` | Register a new user         |
+| POST   | `/api/v1/users/login`    | Log in a user               |
+| GET    | `/api/v1/users/profile`  | Fetch user profile details  |
+| PUT    | `/api/v1/users/profile`  | Update user profile details |
 
-| **Transactions** | | |
-| GET | `/api/v1/transactions` | Retrieve all user transactions |
-| GET | `/api/v1/transactions/:id` | Retrieve a specific transaction |
-| POST | `/api/v1/transactions` | Add a new transaction |
-| PUT | `/api/v1/transactions/:id` | Edit a transaction |
-| DELETE | `/api/v1/transactions/:id` | Delete a transaction |
+### Transactions
 
-| **Budget & Financial Planning** | | |
-| GET | `/api/v1/budget` | Get budget goals |
-| POST | `/api/v1/budget` | Set a new budget goal |
-| PUT | `/api/v1/budget/:id` | Update a budget goal |
-| DELETE | `/api/v1/budget/:id` | Delete a budget goal |
+| Method | Path                       | Purpose                         |
+| ------ | -------------------------- | ------------------------------- |
+| GET    | `/api/v1/transactions`     | Retrieve all user transactions  |
+| GET    | `/api/v1/transactions/:id` | Retrieve a specific transaction |
+| POST   | `/api/v1/transactions`     | Add a new transaction           |
+| PUT    | `/api/v1/transactions/:id` | Edit a transaction              |
+| DELETE | `/api/v1/transactions/:id` | Delete a transaction            |
 
-| **Reports & Analysis** | | |
-| GET | `/api/v1/reports` | Fetch financial reports |
-| POST | `/api/v1/reports/generate` | Generate a new report |
+### Budget & Financial Planning
 
-| **Recurring Payments & Income** | | |
-| GET | `/api/v1/recurring` | Get all recurring payments |
-| POST | `/api/v1/recurring` | Add a recurring payment |
-| PUT | `/api/v1/recurring/:id` | Edit a recurring payment |
+| Method | Path                 | Purpose               |
+| ------ | -------------------- | --------------------- |
+| GET    | `/api/v1/budget`     | Get budget goals      |
+| POST   | `/api/v1/budget`     | Set a new budget goal |
+| PUT    | `/api/v1/budget/:id` | Update a budget goal  |
+| DELETE | `/api/v1/budget/:id` | Delete a budget goal  |
+
+### Reports & Analysis
+
+| Method | Path                       | Purpose                 |
+| ------ | -------------------------- | ----------------------- |
+| GET    | `/api/v1/reports`          | Fetch financial reports |
+| POST   | `/api/v1/reports/generate` | Generate a new report   |
+
+### Recurring Payments & Income
+
+| Method | Path                    | Purpose                    |
+| ------ | ----------------------- | -------------------------- |
+| GET    | `/api/v1/recurring`     | Get all recurring payments |
+| POST   | `/api/v1/recurring`     | Add a recurring payment    |
+| PUT    | `/api/v1/recurring/:id` | Edit a recurring payment   |
 | DELETE | `/api/v1/recurring/:id` | Delete a recurring payment |
 
 ## Tech Used
