@@ -2,8 +2,6 @@
 
 ## User Stories
 
-# User Authentication & Security
-
 - I want to securely sign up with an email and password so that my data is protected.
 - I want to log in and log out securely so that my financial data remains private.
 
@@ -30,42 +28,71 @@
 * I want to set up recurring transactions so that I don’t have to enter fixed expenses manually each month.
 * I want notifications/reminders for upcoming due payments so that I don’t miss any important expenses.
 
-FRONTEND ROUTES
-|Path | Purpose|
-|-----| -------|
-|`/` | Login page |
-/signup Register page
-/dashboard Overview of financial summary
-/calendar Calendar view of transactions
-/transactions View all transactions
-/transactions/:id Detailed transaction view
-/budget Set and manage budget goals
-/reports Generate and view reports
-/settings User settings and preferences
+## FRONTEND ROUTES
 
-BACKEND ROUTES
-Method Path Purpose
-User Authentication
-POST /api/v1/users/register Register a new user
-POST /api/v1/users/login Log in a user
-GET /api/v1/users/profile Fetch user profile details
-PUT /api/v1/users/profile Update user profile details
-Transactions
-GET /api/v1/transactions Retrieve all user transactions
-GET /api/v1/transactions/:id Retrieve a specific transaction
-POST /api/v1/transactions Add a new transaction
-PUT /api/v1/transactions/:id Edit a transaction
-DELETE /api/v1/transactions/:id Delete a transaction
-Budget & Financial Planning
-GET /api/v1/budget Get budget goals
-POST /api/v1/budget Set a new budget goal
-PUT /api/v1/budget/:id Update a budget goal
-DELETE /api/v1/budget/:id Delete a budget goal
-Reports & Analysis
-GET /api/v1/reports Fetch financial reports
-POST /api/v1/reports/generate Generate a new report
-Recurring Payments & Income
-GET /api/v1/recurring Get all recurring payments
-POST /api/v1/recurring Add a recurring payment
-PUT /api/v1/recurring/:id Edit a recurring payment
-DELETE /api/v1/recurring/:id Delete a recurring payment
+---
+
+| Path                | Purpose                       |
+| ------------------- | ----------------------------- |
+| `/`                 | Login page                    |
+| `/signup`           | register page                 |
+| `/profile`          | profile page                  |
+| `/dashboard`        | Overview of financial summary |
+| `/calendar`         | Calendar view of transactions |
+| `/transactions`     | View all transactions         |
+| `/transactions/:id` | Detailed transaction view     |
+| `/budget`           | Set and manage budget goals   |
+| `/reports`          | Generate and view reports     |
+| `/settings`         | User settings and preferences |
+
+## BACKEND ROUTES
+
+---
+
+## API Routes
+
+| Method | Path | Purpose |
+| ------ | ---- | ------- |
+
+| **User Authentication** | | |
+| POST | `/api/v1/users/register` | Register a new user |
+| POST | `/api/v1/users/login` | Log in a user |
+| GET | `/api/v1/users/profile` | Fetch user profile details |
+| PUT | `/api/v1/users/profile` | Update user profile details |
+
+| **Transactions** | | |
+| GET | `/api/v1/transactions` | Retrieve all user transactions |
+| GET | `/api/v1/transactions/:id` | Retrieve a specific transaction |
+| POST | `/api/v1/transactions` | Add a new transaction |
+| PUT | `/api/v1/transactions/:id` | Edit a transaction |
+| DELETE | `/api/v1/transactions/:id` | Delete a transaction |
+
+| **Budget & Financial Planning** | | |
+| GET | `/api/v1/budget` | Get budget goals |
+| POST | `/api/v1/budget` | Set a new budget goal |
+| PUT | `/api/v1/budget/:id` | Update a budget goal |
+| DELETE | `/api/v1/budget/:id` | Delete a budget goal |
+
+| **Reports & Analysis** | | |
+| GET | `/api/v1/reports` | Fetch financial reports |
+| POST | `/api/v1/reports/generate` | Generate a new report |
+
+| **Recurring Payments & Income** | | |
+| GET | `/api/v1/recurring` | Get all recurring payments |
+| POST | `/api/v1/recurring` | Add a recurring payment |
+| PUT | `/api/v1/recurring/:id` | Edit a recurring payment |
+| DELETE | `/api/v1/recurring/:id` | Delete a recurring payment |
+
+## Tech Used
+
+---
+
+- NodeJS
+- Express
+- React
+- Vite
+- Tailwind
+- MongoDB
+- Postman
+- Draw.io
+- Git
