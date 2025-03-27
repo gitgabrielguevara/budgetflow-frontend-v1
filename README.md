@@ -95,16 +95,21 @@
 | PUT    | `/api/v1/recurring/:id` | Edit a recurring payment   |
 | DELETE | `/api/v1/recurring/:id` | Delete a recurring payment |
 
+## Data Model Diagram
+
+---
+
+![and RD](/public/budgetflow-datamodel.svg)
+
 ## Tech Used
 
 ---
 
-- NodeJS
-- Express
 - React
 - Vite
+- PostgreSQL
+- NodeJS
+- Express
 - Tailwind
-- MongoDB
-- Postman
 - Draw.io
 - Git
